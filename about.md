@@ -4,15 +4,17 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+This project and page is a resource for text data and analyses related to U.S. elections. 
+The initial version (Oct 2024) focuses on the 2024 U.S. Presidential Election.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Data Sources
+- Candidate and Party Platforms
+- Debate Transcripts
+- Speech Transcripts
+- Social media [next cycle]
+- News articles [next cycle]
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Methods
+- Word-level statistics (PMI, log-odds)
+- Lexicon-based sentiment and emotion analysis
+- LLM-based summaries and comparative summaries

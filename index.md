@@ -7,3 +7,4 @@
 #
 layout: home
 ---
+Welcome to the CHAI lab's page for election-related NLP! 

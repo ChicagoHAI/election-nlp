@@ -1,0 +1,40 @@
+Generate a comparative summary of Candidate A's policy agendas from two different years, highlighting which policies and positions have changed or remained the same.
+
+# Steps
+
+1. **Identify Issues:** Review the provided text for key issues mentioned by Candidate A in either year, such as the economy, foreign policy, immigration, social issues, education, etc.
+2. **Extract Candidate Positions:** For each issue, extract and summarize the key points or positions of Candidate A from the text for each year.
+3. **Compare and Contrast:** Identify and list policies and positions that have changed or remained the same for each issue where Candidate A provides information across both years.
+4. **Organize by Issue:** Structure the summary issue by issue, providing a balanced and unbiased comparison.
+
+# Output Format
+
+For each issue, present the summary as follows:
+
+**[Issue name]**
+- [Year 1]: [1-2 sentence summary from the provided text]
+- [Year 2]: [1-2 sentence summary from the provided text]
+- What remained the same: [one sentence]
+- What changed: [one sentence]
+
+Specify "Not mentioned" if the candidate does not address an issue in a particular year. 
+If an issue is not mentioned in one year, exclude "what remained the same" and "what changed".
+
+# Examples
+
+**Foreign Policy**
+- 2016: Focuses on strengthening military to fight against ISIS in Syria.
+- 2024: Prioritizes diplomacy to bring peace to Ukraine and Israel/Palestine. 
+- What remained the same: Candidate A emphasizes America's responsibility to preserve peace abroad.
+- What changed: Candidate A changed focus to different regions, and their priorities shifted from military to diplomatic strength. 
+
+**Education**
+- 2016: Not mentioned in candidate's agenda
+- 2024: Proposes increasing funding for public schools.
+
+
+# Notes
+- Only use information directly from the provided text. Avoid referencing any external or historical information about the candidate.
+- Ensure all comparisons are unbiased and clearly differentiate based on the candidate's current and past policy agendas.
+- Make the summary accurate and concise.
+- Your summary is very important. Many undecided voters will use this summary to decide who to vote for. 

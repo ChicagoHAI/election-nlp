@@ -7,29 +7,6 @@ import argparse
 from utils import get_response, load_file, save_response
 
 
-# def anonymize_text(text,candidate_map):
-#     # replace "Vice President Kamala Harris" with "Candidate A" in text
-#     text  = text.replace("Vice President Kamala Harris", candidate_map['harris'])
-#     text  = text.replace("Vice President Harris", candidate_map['harris'])
-#     text  = text.replace("Kamala Harris", candidate_map['harris'])
-#     text  = text.replace("Harris", candidate_map['harris'])
-#     text  = text.replace("Kamala", candidate_map['harris'])
-#     text = text.replace("Biden-Harris",candidate_map['harris'])
-#     text = text.replace("Biden/Harris",candidate_map['harris'])
-#     text = text.replace("Harris-Walz",candidate_map['harris'])
-#     text = text.replace("Harris/Walz",candidate_map['harris'])
-
-
-#     text  = text.replace("President Donald J. Trump", candidate_map['trump'])
-#     text  = text.replace("President Donald Trump", candidate_map['trump'])
-#     text  = text.replace("President Trump", candidate_map['trump'])
-#     text  = text.replace("Donald J. Trump", candidate_map['trump'])
-#     text  = text.replace("Donald Trump", candidate_map['trump'])
-#     text  = text.replace("Trump", candidate_map['trump'])
-#     return text
-
-
-
 def create_user_prompt(relative_path,cand_a,cand_b,year):
     file_a = os.path.join(relative_path,cand_a,f"{year}.txt")
     file_b = os.path.join(relative_path,cand_b,f"{year}.txt")
@@ -43,7 +20,6 @@ def create_user_prompt(relative_path,cand_a,cand_b,year):
 def post_process_response(response,cand_a,cand_b):
     response = response.replace("Candidate A",cand_a.title())
     response = response.replace("Candidate B",cand_b.title())
-    # Convert response to markdown formatting
     return response
 
 
@@ -59,21 +35,15 @@ def main():
 
     cand_a = candidates[0]
     cand_b = candidates[1]
-    
-  
 
     prompt_file = "../data/prompts/cross_candidate_agenda.txt"
     system_prompt = load_file(prompt_file)
-
-
 
     rel_path = f"../data/candidate_positions/{office}"
     user_prompt = create_user_prompt(rel_path,cand_a,cand_b,year)
     response = get_response(system_prompt,user_prompt)
     response = post_process_response(response,cand_a,cand_b)
    
-    print(response)
-
     out_path = f"../results/candidates/{office}_{year}_{cand_a}_{cand_b}.md"
     Path(out_path).parent.mkdir(parents=True, exist_ok=True)
     save_response(response, out_path)

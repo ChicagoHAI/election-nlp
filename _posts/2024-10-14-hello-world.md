@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Comparing 2024 Agendas: Harris vs. Trump"
-categories: summaries
 ---
 
 Below is a comparative summary of Kamala Harris and Donald Trump's agendas for the 2024 Presidential Election, produced by GPT-4o.

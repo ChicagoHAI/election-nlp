@@ -7,7 +7,7 @@ Below is a comparative summary of Kamala Harris and Donald Trump's agendas for t
 
 
 {% capture content %}
-    {% include_relative ../results/candidates/president_2024_harris_trump.md %}
+    {% include president_2024_harris_trump.md %}
 {% endcapture  %}
 
 {{ content | markdownify }}

@@ -12,8 +12,8 @@ Generate a comparative summary of Candidate A's policy agendas from two differen
 For each issue, present the summary as follows:
 
 **[Issue name]**
-- [Year 1]: [1-2 sentence summary from the provided text]
-- [Year 2]: [1-2 sentence summary from the provided text]
+- [Year 1]: [one-sentence summary from the provided text]
+- [Year 2]: [one-sentence summary from the provided text]
 - What remained the same: [one sentence]
 - What changed: [one sentence]
 
@@ -29,12 +29,12 @@ If an issue is not mentioned in one year, exclude "what remained the same" and "
 - What changed: Candidate A changed focus to different regions, and their priorities shifted from military to diplomatic strength. 
 
 **Education**
-- 2016: Not mentioned in candidate's agenda
+- 2016: Not mentioned
 - 2024: Proposes increasing funding for public schools.
 
 
 # Notes
-- Only use information directly from the provided text. Avoid referencing any external or historical information about the candidate.
+- Only use information directly from the provided text. Avoid referencing any external information about the candidate.
 - Ensure all comparisons are unbiased and clearly differentiate based on the candidate's current and past policy agendas.
 - Make the summary accurate and concise.
 - Your summary is very important. Many undecided voters will use this summary to decide who to vote for. 

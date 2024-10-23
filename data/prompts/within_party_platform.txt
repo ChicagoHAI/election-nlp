@@ -1,10 +1,10 @@
-Generate a comparative summary of Party A's policy platforms from two different years, highlighting which policies and positions have changed or remained the same.
+Generate a comparative summary of Party A's policy platforms from several different years, highlighting which policies and positions have changed or remained the same.
 
 # Steps
 
 1. **Identify Issues:** Review the provided text for key issues mentioned by Party A in either year, such as the economy, foreign policy, immigration, social issues, education, etc.
 2. **Extract Party Positions:** For each issue, extract and summarize the key points or positions of Party A from the text for each year.
-3. **Compare and Contrast:** Identify and list policies and positions that have changed or remained the same for each issue where Party A provides information across both years.
+3. **Compare and Contrast:** Identify and list policies and positions that have changed or remained the same for each issue where Party A provides information across all years.
 4. **Organize by Issue:** Structure the summary issue by issue, providing a balanced and unbiased comparison.
 
 # Output Format

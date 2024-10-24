@@ -3,10 +3,10 @@ from openai import OpenAI
 
 
 
-def load_file(prompt_file):
-    with open(prompt_file, 'r') as f:
-        prompt = f.read()
-    return prompt
+def load_file(filename):
+    with open(filename, 'r') as f:
+        text = f.read()
+    return text
 
 
 def get_response(system_prompt, user_prompt):

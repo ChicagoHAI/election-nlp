@@ -50,17 +50,17 @@ def main():
     corpus_pairs = [('democrat_2024','democrat_2020'),('republican_2024','republican_2016'),
                     ('trump_2024','trump_2016'),('harris_2024','harris_2020'),
                     ('harris_2024','trump_2024'),('democrat_2024','republican_2024')]
-    # for corpus_pair in corpus_pairs:
-    #     corpus_name1,corpus_name2 = corpus_pair
-    #     for ngram in [1,2]:
-    #         for stop_words in [None,'english']:
-    #             out_dir = f'../results/log_odds/platforms/ngram_{ngram}/stopwords_{str(stop_words)}'
-    #             Path(out_dir).mkdir(parents=True,exist_ok=True)
-    #             corpus1 = [corpus[corpus_name1]]
-    #             corpus2 = [corpus[corpus_name2]]
-    #             results = run_log_odds(corpus1,corpus2,corpus_name1,corpus_name2,ngram=ngram,stop_words=stop_words)
-    #             out_file = f'{out_dir}/{corpus_name1}_{corpus_name2}.csv'
-    #             results.to_csv(out_file,index=False)
+    for corpus_pair in corpus_pairs:
+        corpus_name1,corpus_name2 = corpus_pair
+        for ngram in [1,2]:
+            for stop_words in [None,'english']:
+                out_dir = f'../results/log_odds/platforms/ngram_{ngram}/stopwords_{str(stop_words)}'
+                Path(out_dir).mkdir(parents=True,exist_ok=True)
+                corpus1 = [corpus[corpus_name1]]
+                corpus2 = [corpus[corpus_name2]]
+                results = run_log_odds(corpus1,corpus2,corpus_name1,corpus_name2,ngram=ngram,stop_words=stop_words)
+                out_file = f'{out_dir}/{corpus_name1}_{corpus_name2}.csv'
+                results.to_csv(out_file,index=False)
 
     for corpus_pair in corpus_pairs:
         corpus_name1,corpus_name2 = corpus_pair

@@ -25,4 +25,5 @@ def get_response(system_prompt, user_prompt):
 def save_response(response, output_file):
     with open(output_file, 'w') as f:
         f.write(response)
-    
+
+

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Democrat Log Odds
+title: "Comparing Words in the Democratic Party's 2024 and 2020 National Platforms"
 ---
 
 

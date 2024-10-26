@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Republican Log Odds"
+title: "Comparing Words in the Republican Party's 2024 and 2016/2020 National Platforms"
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Log-Odds Cross Party
+title: "Comparing Words between the Democratic and Republican Party's 2024 National Platforms"
 ---
 
 

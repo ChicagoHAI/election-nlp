@@ -9,5 +9,4 @@ layout: home
 ---
 ## Welcome to the CHAI lab's page for election-related NLP! 
 
-
-<button class="button" onclick="http://www.google.com">Click me</button>
+<a href="https:www.google.com" class="button">Click Me</a>

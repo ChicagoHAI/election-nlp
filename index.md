@@ -7,4 +7,8 @@
 #
 layout: home
 ---
-Welcome to the CHAI lab's page for election-related NLP! 
+## Welcome to the CHAI lab's page for election-related NLP! 
+
+
+
+<a href="https://example.com" class="btn">Visit Example</a>

@@ -3,7 +3,7 @@
 .button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     color: #ffffff;
     background-color: #8702bb;
@@ -16,4 +16,21 @@
   
   .button:hover {
     background-color: #8702bb5a;
+  }
+
+  .button:visited {
+    color: #ffffff;
+  }
+
+// green button
+.button-green {
+    background-color: #077307;
+  }
+  
+  .button-green:hover {
+    background-color: #07730773;
+  }
+
+  .button-green:visited {
+    color: #ffffff;
   }

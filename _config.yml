@@ -23,7 +23,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-include: ['_pages']
 
 
 # Theme-specific settings
@@ -31,8 +30,8 @@ include: ['_pages']
 # If you want to link only specific pages in your header, use this and add the path to the pages
 # in order as they should show up.
 header_pages:
-  - about.md
-  - harris-trump.md
+  - _pages/about.md
+  - _pages/harris-trump.md
 
 # Set to `true` to show excerpts on the homepage.
 #show_excerpts: true

@@ -3,7 +3,7 @@
 .button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 48px;
     font-weight: bold;
     color: #ffffff;
     background-color: #8702bb;
@@ -19,6 +19,9 @@
   }
 
   .button:visited {
+    color: #ffffff;
+  }
+  .button:active {
     color: #ffffff;
   }
 

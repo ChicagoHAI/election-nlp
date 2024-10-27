@@ -7,6 +7,6 @@
 #
 layout: home
 ---
-Welcome to the CHAI lab's page for election-related NLP! 
+# Welcome to the CHAI lab's page for election-related NLP! 
 
 <a href="candidates" class="button">Comparing 2024 Agendas: Harris vs. Trump</a>

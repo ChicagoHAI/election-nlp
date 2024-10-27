@@ -23,7 +23,8 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-
+include:
+  - _pages
 
 # Theme-specific settings
 

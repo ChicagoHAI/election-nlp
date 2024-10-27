@@ -10,5 +10,10 @@ layout: home
 ## Welcome to the CHAI lab's page for election-related NLP! 
 
 
+[Link button](https://just-the-docs.com){: .btn }
 
-<a href="https://example.com" class="btn">Visit Example</a>
+[Link button](https://just-the-docs.com){: .btn .btn-purple }
+[Link button](https://just-the-docs.com){: .btn .btn-blue }
+[Link button](https://just-the-docs.com){: .btn .btn-green }
+
+[Link button](https://just-the-docs.com){: .btn .btn-outline }

@@ -34,6 +34,7 @@ header_pages:
   # - pages/about.md
   - pages/election-2024.md
   - pages/then-and-now.md
+  - pages/feedback.md
 
 # Set to `true` to show excerpts on the homepage.
 #show_excerpts: true

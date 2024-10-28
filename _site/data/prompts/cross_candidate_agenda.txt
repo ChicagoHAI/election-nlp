@@ -1,0 +1,40 @@
+Generate a comparative summary of policy agendas for two political candidates, Candidate A and Candidate B, highlighting issue-based similarities and differences.
+
+# Steps
+
+1. **Identify Issues:** Review the provided text for key issues mentioned by either candidate, such as the economy, foreign policy, immigration, social issues, education, etc.
+2. **Extract Candidate Positions:** For each issue, extract and summarize the key points or positions of Candidate A and Candidate B from the text.
+3. **Compare and Contrast:** Identify and list similarities and differences for each issue where both candidates provide information.
+4. **Organize by Issue:** Structure the summary issue by issue, providing a balanced and unbiased comparison.
+
+# Output Format
+
+For each issue, present the summary as follows:
+
+**[Issue name]**
+- Candidate A: [one-sentence summary from the provided text]
+- Candidate B: [one-sentence summary from the provided text]
+- Similarities: [one sentence about similarities]
+- Differences: [one sentence about differences]
+
+Specify "Not mentioned in candidate's agenda" if a candidate does not address an issue in their agenda. 
+If an issue is not mentioned by one candidate, exclude "similarities" and "differences".
+
+# Examples
+
+**Economy**
+- Candidate A: Focuses on reducing taxes to stimulate job creation.
+- Candidate B: Proposes increasing taxes on the wealthy to fund infrastructure projects.
+- Similarities: Both candidates emphasize creating jobs.
+- Differences: Candidate A relies on tax cuts, while Candidate B focuses on taxation and infrastructure.
+
+**Education**
+- Candidate A: Not mentioned in candidate's agenda
+- Candidate B: Prioritizes increasing funding for public schools.
+
+
+# Notes
+- Only use information directly from the provided text. Avoid referencing any external or historical information about the candidates.
+- Ensure all comparisons are unbiased and clearly differentiate based on the candidates' current policy agendas.
+- Make the summary accurate and concise.
+- Your summary is very important. Many undecided voters will use this summary to decide who to vote for. 

@@ -3,7 +3,7 @@
 .button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 48px;
+    font-size: 24px;
     font-weight: bold;
     color: #ffffff;
     background-color: #8702bb;
@@ -25,15 +25,47 @@
     color: #ffffff;
   }
 
-// green button
-.button-green {
-    background-color: #077307;
-  }
-  
-  .button-green:hover {
-    background-color: #07730773;
-  }
 
-  .button-green:visited {
+
+
+  .btn-grad {background-image: linear-gradient(to right, #614385 0%, #516395  51%, #614385  100%)}
+  .btn-grad {
+     margin: 10px;
+     padding: 15px 30px;
+     text-align: center;
+    //  text-transform: capitalize;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     //box-shadow: 0 0 20px #eee;
+     border-radius: 10px;
+     display: block;
+     font-size: 20px;
+   }
+
+   .btn-grad:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+
+   .btn-grad:visited {
     color: #ffffff;
   }
+  .btn-grad:active {
+    color: #ffffff;
+  }
+  .large-text {
+    font-size: 24px; /* Example large font size */
+    margin-right: 8px; /* Space between texts */
+  }
+  
+  .small-text {
+    font-size: 16px; /* Example small font size */
+  }
+  
+
+.btn-grad-red {background-image: linear-gradient(to right, #a73737 0%, #7a2828  51%, #a73737  100%)}
+.btn-grad-blue {background-image: linear-gradient(to right, #1e3c72 0%, #2a5298  51%, #1e3c72  100%)}
+.btn-grad-rb {background-image: linear-gradient(to right, #3a6186 0%, #89253e  51%, #3a6186  100%)}
+.btn-grad-purple {background-image: linear-gradient(to right, #6441A5 0%, #2a0845  51%, #6441A5  100%)}

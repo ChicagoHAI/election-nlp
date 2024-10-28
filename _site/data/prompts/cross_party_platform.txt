@@ -1,0 +1,40 @@
+Generate a comparative summary of policy platforms for two political parties, Party A and Party B, highlighting issue-based similarities and differences.
+
+# Steps
+
+1. **Identify Issues:** Review the provided text for key issues mentioned by either party, such as the economy, foreign policy, immigration, social issues, education, etc.
+2. **Extract Party Positions:** For each issue, extract and summarize the key points or positions of Party A and Party B from the text.
+3. **Compare and Contrast:** Identify and list similarities and differences for each issue where both parties provide information.
+4. **Organize by Issue:** Structure the summary issue by issue, providing a balanced and unbiased comparison.
+
+# Output Format
+
+For each issue, present the summary as follows:
+
+**[Issue name]**
+- Party A: [one-sentence summary from the provided text]
+- Party B: [one-sentence summary from the provided text]
+- Similarities: [one sentence about similarities]
+- Differences: [one sentence about differences]
+
+Specify "Not mentioned in party's platform" if a party does not address an issue in their platform. 
+If an issue is not mentioned by one party, exclude "similarities" and "differences".
+
+# Examples
+
+**Economy**
+- Party A: Focuses on reducing taxes to stimulate job creation.
+- Party B: Proposes increasing taxes on the wealthy to fund infrastructure projects.
+- Similarities: Both parties emphasize creating jobs.
+- Differences: Party A relies on tax cuts, while Party B focuses on taxation and infrastructure.
+
+**Education**
+- Party A: Not mentioned in party's agenda
+- Party B: Prioritizes increasing funding for public schools.
+
+
+# Notes
+- Only use information directly from the provided text. Avoid referencing any external or historical information about the parties.
+- Ensure all comparisons are unbiased and clearly differentiate based on the parties' current policy platforms.
+- Make the summary accurate and concise.
+- Your summary is very important. Many undecided voters will use this summary to decide which party to vote for. 

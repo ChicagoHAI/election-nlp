@@ -3,12 +3,12 @@ The initial version (Oct 2024) focuses on the 2024 U.S. Presidential Election.
 
 Data Sources
 - Candidate and Party Platforms
-- Debate Transcripts
 - Speech Transcripts
 - Social media [next cycle]
 - News articles [next cycle]
 
 Methods
-- Word-level statistics (PMI, log-odds)
-- Lexicon-based sentiment and emotion analysis
+- Word-level statistics (log-odds)
 - LLM-based summaries and comparative summaries
+- Lexicon-based sentiment and emotion analysis [next-cycle]
+- ...and more to come! 

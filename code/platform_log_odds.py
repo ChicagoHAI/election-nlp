@@ -3,10 +3,11 @@ import os
 import pandas as pd
 from pathlib import Path
 import spacy
-from utils import load_file
+#from utils import load_file
 from fightin_words_utils import bayes_compare_language, get_term_frequency
 
 nlp = spacy.load("en_core_web_sm")
+nlp.max_length = 2043088
 
 def filter_by_pos(text,pos):
     doc = nlp(text,disable=['ner'])
@@ -22,15 +23,15 @@ def filter_by_pos(text,pos):
 # Temporary convenience function to load all corpora
 def load_all_corpora():
     corpus = {}
-    for year in ['2016','2020','2024']:
+    """ for year in ['2016','2020','2024']:
         for party in ['democrat','republican']:
             filename = f'../data/party_platforms/federal/{party}/{year}.txt'
             if os.path.exists(filename):
-                corpus[f'{party}_{year}'] = load_file(filename)
-        for candidate in ['trump','harris']:
-            filename = f'../data/candidate_positions/president/{candidate}/{year}.txt'
-            if os.path.exists(filename):
-                corpus[f'{candidate}_{year}'] = load_file(filename)
+                corpus[f'{party}_{year}'] = load_file(filename)"""
+    for candidate in ['trump','harris']:
+        filename = f'{candidate}clean.txt'
+        with open(filename) as file:
+            corpus[f'{candidate}'] = file.read()
     return corpus
 
 def run_log_odds(corpus1,corpus2,corpus_name1,corpus_name2,ngram=1,stop_words=None):
@@ -47,9 +48,7 @@ def run_log_odds(corpus1,corpus2,corpus_name1,corpus_name2,ngram=1,stop_words=No
 def main():
     
     corpus = load_all_corpora()
-    corpus_pairs = [('democrat_2024','democrat_2020'),('republican_2024','republican_2016'),
-                    ('trump_2024','trump_2016'),('harris_2024','harris_2020'),
-                    ('harris_2024','trump_2024'),('democrat_2024','republican_2024')]
+    corpus_pairs = [('trump','harris')]
     for corpus_pair in corpus_pairs:
         corpus_name1,corpus_name2 = corpus_pair
         for ngram in [1,2]:
@@ -67,14 +66,11 @@ def main():
         for pos in ['noun','verb','adjective']:
             corpus1 = [filter_by_pos(corpus[corpus_name1],pos)]
             corpus2 = [filter_by_pos(corpus[corpus_name2],pos)]
-            out_dir = f'../results/log_odds/platforms/{pos}'
+            out_dir = f'../results/{pos}'
             Path(out_dir).mkdir(parents=True,exist_ok=True)
             results = run_log_odds(corpus1,corpus2,corpus_name1,corpus_name2,ngram=1,stop_words=None)
             out_file = f'{out_dir}/{corpus_name1}_{corpus_name2}.csv'
             results.to_csv(out_file,index=False)
-            
-
-        
             
 
 if __name__ == "__main__":
